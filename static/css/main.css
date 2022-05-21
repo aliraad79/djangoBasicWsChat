@@ -1,0 +1,18 @@
+/* static/css/main.css */
+input, .message{
+    margin-bottom: 10px;
+    padding: 15px;
+    border: 1px solid #125a33;
+    font-size: 14px;
+    background-color: #71d19e;
+    color: white;
+}
+.button{
+    color: white;
+    white-space: nowrap;
+    background-color: #31d47d;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 2px;
+    transition: all 150ms ease-out;
+}

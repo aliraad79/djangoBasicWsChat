@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="wrapper">
+  <h1>Welcome to Chat room</h1>
+  <form method="POST">
+    {% csrf_token %}
+    <div class='form-control'>
+      <label for="room">Room id</label>
+      <input id="room" type="text" name="room_code" required /><br>
+    </div>
+    <div class='form-control'>
+      <label for="username">Username</label>
+      <input for="username" type="text" name="username" required />
+    </div>
+    <input type="submit" class="button" value="Start Chat" />
+</div>
+</form>
+{% endblock content %}

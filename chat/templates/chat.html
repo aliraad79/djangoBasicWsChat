@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<center>
+    <h1>Chat room</h1>
+    <h3>Welcome to room_{{room_code}}</h3>
+</center>
+<div>
+    <input type="text" id="chat_box">
+    <input type="submit" value="Send" id="chat_box_send">
+</div>
+<div id="chat_space" room_code={{room_code}} username={{username}}>
+</div>
+{% endblock content %}
